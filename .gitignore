@@ -1,0 +1,65 @@
+# =========================
+# Maven
+# =========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.buildNumber
+.mvn/timing.properties
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# IntelliJ plugin caches / local configs
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/aws.xml
+.idea/**/httpRequests/
+.idea/**/dataSources/
+.idea/**/dataSources.local.xml
+
+# =========================
+# OS / Misc
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# (Optional) Local env files
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# (Optional) JVM crash logs
+# =========================
+hs_err_pid*
+
+# =========================
+# (Optional) Temporary files
+# =========================
+*.tmp
+*.swp
+*~
+``*
