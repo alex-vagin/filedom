@@ -48,16 +48,16 @@ public abstract class FileChecker implements Predicate<Path> {
             return false;
         }
 
-        return test4ExtenisonWitLog(path);
+        return isMyExtenisonWitLog(path);
     }
 
-    public boolean test4Extenison(final Path path) {
+    public boolean isMyExtenison(final Path path) {
         String fileExtension = getFileExtension(path);
         return Arrays.stream(extensions).anyMatch(fileExtension::equalsIgnoreCase);
     }
 
-    public boolean test4ExtenisonWitLog(final Path path) {
-        if (test4Extenison(path)) {
+    public boolean isMyExtenisonWitLog(final Path path) {
+        if (isMyExtenison(path)) {
             return true;
         }
         LOG.error("File extension {} not in allowed extension list: {}", getFileExtension(path), String.join(",", extensions));

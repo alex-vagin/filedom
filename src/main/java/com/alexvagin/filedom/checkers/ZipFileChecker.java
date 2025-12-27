@@ -12,6 +12,10 @@ import java.util.zip.ZipInputStream;
 public class ZipFileChecker extends FileChecker {
 	private static final Logger log = LoggerFactory.getLogger(ZipFileChecker.class);
 
+	public ZipFileChecker() {
+
+	}
+
 	@Override
 	public boolean test(Path zipFile) {
 		try (InputStream inputStream = new BufferedInputStream(new FileInputStream(zipFile.toFile()))) {
